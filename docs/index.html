@@ -1,45 +1,226 @@
 <!--
     Name: Liam Navarre
     Class: CPSC 332
-    Assignment: HW2
-    Last Modified: 9/22/2022
+    Assignment: HW3
+    Last Modified: 10/6/2022
 -->
 <!DOCTYPE html>
 <html lang="">
 <head>
-<title>Liam Navarre + CPSC322-01</title>
-<link rel="icon" href="favicon.jpg">
+    <title>Liam Navarre + CPSC322-01</title>
+    <link rel="icon" href="favicon.jpg">
+    <style>
+        header{
+            background: lightslategray;
+            line-height: 30px;
+            padding: 10px;
+        }
+
+        body{
+            text-align: left;
+            max-width: 700px;
+            width: 90%;
+            margin: 0px auto;
+        }
+
+        #container{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left {
+            flex-grow: 0;
+            flex-basis: 30%;
+            background: rgb(52, 188, 52);
+            padding: 10px;
+        }
+
+        .main{
+            flex: 0 1 80%;
+            background: cornflowerblue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        P{
+            padding-left: 10px;
+            padding-top: 10px;
+            margin: 0px;
+        }
+        
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,td{
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+
+        main li{
+            color: whitesmoke;
+        }
+    </style>
+    
+    
 </head>
 <body>
-
-    <section>
-        <h1>Introduction</h1>
-    <p>
-    My name is Liam Navarre. I'm currently a Junior at Gonzaga University.
-    I'm working towards my degree in computer science with a bachelors of science.
-    I'm also minoring in math in order to keep the logical thinking involved in the subject
-    present in my life. I'm 21 years old and I expect to graduate Spring of 2024. I'm 
-    interested in game development and data science.
-    </p>
-
-    <img src="dog.jpg" alt="A picture of myself and my dog" width="300" height="300">
-
-    <ul>
-        <li>Proficient in C++</li>
-        <li>Good people skills</li>
-        <li>A strong work ethic</li>
-    </ul>
-
-    </section>
-
-
-    <footer>
+    <header>
+        <p>
+            navigation
+        </p>
         <nav>
             <a href="career_summary.html">Career Summary</a> &nbsp; 
             <a href="ed_qual.html">Education and Qualifications</a> &nbsp; 
             <a href="int_hob.html">Interests and Hobbis</a>
         </nav>
-    </footer>
+    </header>
+    <!-- Flexbox layout -->
+    <div id="container">
+        <nav class="left">
+            <p>
+                <img src="dog.jpg" alt="A picture of myself and my dog" width="300" height="300">
+                <h3>Liam Navarre</h3>
+                <h4>Profession: Student</h4>
+            </p>
+            <br>
+            <p>
+                My name is Liam Navarre. I'm currently a Junior at Gonzaga University.
+                I'm working towards my degree in computer science with a bachelors of science.
+                I'm also minoring in math in order to keep the logical thinking involved within the subject
+                present in my life. I'm 21 years old and I expect to graduate Spring of 2024. I'm 
+                interested in game development and data science.
+            </p>
+            <br>
+            <p>
+                <ul>
+                    <li>Proficient in C++</li>
+                    <li>Good people skills</li>
+                    <li>A strong work ethic</li>
+                </ul>
+            </p>
+        </nav>
+        <main class="main">
+            <div>
+                <table>
+                    <caption>Career Summary</caption>
+                    <tr>
+                        <th>Place of Work</th>
+                        <th>Position</th>
+                        <th>Type of Work</th>
+                        <th>Year of Work</th>
+                    </tr>
+                    <tr>
+                        <td>Commercial Fishing</td>
+                        <td>Deck Hand</td>
+                        <td>Manual Labor</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>Fircrest Golf Club</td>
+                        <td>Service Assistant</td>
+                        <td>Customer Service</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>Cross's Smoke Shop</td>
+                        <td>Cashier</td>
+                        <td>Customer Service</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Wheel Fun Rentals</td>
+                        <td>Sales Representative</td>
+                        <td>Customer Service</td>
+                        <td>2018</td>
+                    </tr>
+                </table>
+            </div>
+            <table>
+                <caption>Education</caption>
+                <tr>
+                    <th>Graduating Grade</th>
+                    <th>Graduating Year</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>8th</td>
+                    <td>2015</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>2020</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>16th</td>
+                    <td>2024</td>
+                    <td>22</td>
+                </tr>
+            </table>
+            <table>
+                <caption>Qualifications</caption>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Type</th>
+                </tr>
+                <tr>
+                    <td>Proficient in C++</td>
+                    <td>2+ Years of coding experience and education</td>
+                </tr>
+                <tr>
+                    <td>Minor in Math</td>
+                    <td>A minor in the subject of pure mathematics. It helps integrate problem solving</td>
+                </tr>
+                <tr>
+                    <td>Software Development Concentration</td>
+                    <td>A concentration behind the framework of software development</td>
+                </tr>
+            </table>
+            <li>One of my biggest hobbies is video games. I used to play game battles,
+                online tournaments, anything. The game I specifically play the most is 
+                Apex Legends. I'm fortunate enough to say I'm in the top 0.5% and that 
+                I've won a little money from playing. So I could be considered semi-pro
+                in some eyes
+                <br>
+                <a href="https://www.ea.com/games/apex-legends" target="_blank">
+                    <img src="apex.jpg" alt="A photo of the cover of the game Apex Legends" width="300" height="300">
+                </a>
+            </li>
+            <li>
+                Another hobby I really enjoy is American Football. I've grown up watching 
+                the sport my whole life. My favorite team is the Green Bay Packers. I've 
+                been fortunate enough to be able to go see a few games in person
+                <br>
+                <a href="https://www.packers.com/" target="_blank">
+                    <img src="packer.jpg" alt="A picture of the Green Bay Packers Logo" width="300" height="300">
+                </a>
+            </li>
+            <li>
+                One of my favorite sports to play is actually rowing. I feel into the sport in 
+                highschool after getting a few knee surgeries. Due to those injuries I wasn't able 
+                to play sports like football or basketball. So through rowing I was able to keep a 
+                strong sense of competition still
+                <br>
+                <a href="https://usrowing.org/" target="_blank">
+                    <img src="rowing.jpg" alt="A picture of 8 rowers and a coxswain during competition" width="300" height="300">
+                </a>
+            </li>
+        </ol>
+    </main>
+    </div>
+
+    <section>
+        
+
+    </section>
 </body>
 
 </html>
